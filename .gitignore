@@ -1,1 +1,4 @@
 /venv/
+/build/main/
+/dist/main/
+/main.spec
