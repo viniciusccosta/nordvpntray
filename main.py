@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import *
 import subprocess
 import threading
 from time import sleep
+import sys
 
 
 # ======================================================================================================================
@@ -123,7 +124,7 @@ def exitPressed():
     global thr
 
     thr.active = False
-    exit(0)
+    sys.exit(0)
 
 
 def updateMenu(tooltip_txt=None):
