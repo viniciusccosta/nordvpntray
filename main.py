@@ -55,7 +55,7 @@ def createSystemTray():
     # ------------------------------------------------------
     # Icon:
     tray = QSystemTrayIcon()
-    tray.setIcon(QIcon("./nordvpn-icon.png"))
+    tray.setIcon(QIcon("./icons/nordvpn-icon.png"))
     tray.setVisible(True)
 
     # ------------------------------------------------------
@@ -128,12 +128,12 @@ def exitPressed():
 
 def updateMenu(tooltip_txt=None):
     if tooltip_txt:
-        tray.setIcon(QIcon("./nordvpn-icon.png"))
+        tray.setIcon(QIcon("./icons/nordvpn-icon.png"))
         actions["Quick Connect"]["action"].setEnabled(False)
         actions["Disconnect"]["action"].setEnabled(True)
         tray.setToolTip(tooltip_txt.decode("utf-8"))
     else:
-        tray.setIcon(QIcon("./nordvpn-icon-gray.png"))
+        tray.setIcon(QIcon("./icons/nordvpn-icon-gray.png"))
         actions["Quick Connect"]["action"].setEnabled(True)
         actions["Disconnect"]["action"].setEnabled(False)
         tray.setToolTip("Disconnected")
