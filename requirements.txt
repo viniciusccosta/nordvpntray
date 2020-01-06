@@ -1,0 +1,4 @@
+altgraph==0.16.1
+PyInstaller==3.5
+PyQt5==5.14.0
+PyQt5-sip==12.7.0
